@@ -1,0 +1,238 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #0d1117;
+  color: #c9d1d9;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
+  min-height: 100vh;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 640px;
+  /* Page Load Fade-In Animation */
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.badge {
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  color: #58a6ff;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  color: #f0f6fc;
+}
+
+.tagline {
+  font-size: 0.95rem;
+  color: #8b949e;
+  margin-top: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.divider {
+  height: 1px;
+  background: #30363d;
+  margin: 24px auto;
+  width: 60px;
+}
+
+/* Hide Radio Inputs */
+.filter-radio {
+  display: none;
+}
+
+/* Navigation & Button Styling */
+.nav {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 36px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  color: #c9d1d9;
+  background-color: #161b22;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-family: inherit;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #21262d;
+  border-color: #8b949e;
+  color: #f0f6fc;
+}
+
+/* Pure CSS Active Button States */
+#filter-all:checked ~ .nav label[for="filter-all"],
+#filter-essay:checked ~ .nav label[for="filter-essay"],
+#filter-poem:checked ~ .nav label[for="filter-poem"],
+#filter-quote:checked ~ .nav label[for="filter-quote"] {
+  background-color: #21262d;
+  border-color: #58a6ff;
+  color: #58a6ff;
+}
+
+/* Cards Feed Grid */
+.feed {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.post-card {
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease;
+  animation: cardAppear 0.5s ease-out forwards;
+}
+
+@keyframes cardAppear {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.post-card:hover {
+  border-color: #58a6ff;
+  transform: translateY(-2px);
+}
+
+/* Pure CSS Filtering Logic */
+#filter-essay:checked ~ .feed .post-card:not(.essay),
+#filter-poem:checked ~ .feed .post-card:not(.poem),
+#filter-quote:checked ~ .feed .post-card:not(.quote) {
+  display: none;
+}
+
+.post-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: #8b949e;
+  margin-bottom: 12px;
+}
+
+.post-type {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #58a6ff;
+  font-weight: 600;
+}
+
+.post-card h2 {
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+}
+
+.post-card h2 a {
+  color: #f0f6fc;
+  text-decoration: none;
+}
+
+.post-card h2 a:hover {
+  color: #58a6ff;
+}
+
+.excerpt {
+  color: #8b949e;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Formats */
+.quote-text {
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #c9d1d9;
+  line-height: 1.4;
+  margin-top: 4px;
+}
+
+.poem-preview {
+  font-family: Georgia, serif;
+  font-style: italic;
+  color: #c9d1d9;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  margin-top: 8px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.copyright {
+  font-size: 0.8rem;
+  color: #8b949e;
+  letter-spacing: 0.5px;
+}
+
+/* Essay End Divider */
+.divider {
+  border: 0;
+  height: 1px;
+  background: #30363d;
+  margin: 40px auto;
+  width: 100%; /* Or set to 60px / 50% for a subtle centered divider */
+}

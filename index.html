@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ink & Irony | 1952Journey</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="badge">1952 JOURNEY</div>
+        <h1>Ink & Irony</h1>
+        <div class="divider"></div>
+      </header>
+
+      <!-- Hidden Radio Inputs for Pure CSS State -->
+      <input
+        type="radio"
+        name="filter"
+        id="filter-all"
+        class="filter-radio"
+        checked
+      />
+      <input
+        type="radio"
+        name="filter"
+        id="filter-essay"
+        class="filter-radio"
+      />
+      <input type="radio" name="filter" id="filter-poem" class="filter-radio" />
+      <input
+        type="radio"
+        name="filter"
+        id="filter-quote"
+        class="filter-radio"
+      />
+
+      <!-- Filter Buttons (Styled Labels) -->
+      <nav class="nav">
+        <label for="filter-all" class="btn">All</label>
+        <label for="filter-essay" class="btn">Essays</label>
+        <label for="filter-poem" class="btn">Poems</label>
+        <label for="filter-quote" class="btn">Quotes</label>
+      </nav>
+
+      <!-- Post Cards Grid -->
+      <main class="feed">
+        <!-- Essay Entry -->
+        <article class="post-card essay">
+          <div class="post-meta">
+            <span class="post-type">Essay</span>
+            <span class="post-date">Sep 29, 2026</span>
+          </div>
+          <h2>
+            <a href="posts/yellow-bed.html">Giving Birth on a Yellow Bed...</a>
+          </h2>
+          <p class="excerpt">
+            On the day I was born, September 29, in one of the old houses of
+            Damascus, the earth, too, was in labor...
+          </p>
+        </article>
+      </main>
+
+      <footer class="footer">
+        <a
+          href="https://www.twitter.com/1952Journey"
+          class="btn"
+          target="_blank"
+          rel="noopener"
+          >Go stalk me on Twitter instead</a
+        >
+        <p class="copyright">
+          &copy; <span id="year"></span> Ink & Irony. All rights reserved.
+        </p>
+      </footer>
+    </div>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
