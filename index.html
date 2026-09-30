@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ink & Irony</title>
-    <link rel="icon" type="image/x-icon" href="/img/favicon.png" />
-    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.png" />
+    <link rel="stylesheet" href="/assets/main.css" />
   </head>
   <body>
     <div class="container">
@@ -46,6 +46,40 @@
 
       <!-- Post Cards Grid -->
       <main class="feed">
+        <!-- NEW POST - BEGIN -->
+        <!-- NEW POST - END -->
+
+        <article class="post-card poem">
+          <div class="post-meta">
+            <span class="post-type">Poem</span>
+            <span class="post-date">Sep 30, 2026</span>
+          </div>
+          <h2>
+            <a href="/poems/september-29.html"
+              >The Poem Is Born from Her Fingers</a
+            >
+          </h2>
+          <p class="excerpt">
+            I was born…<br />
+            on the twenty-ninth of September,<br />
+            on that moody day<br />
+            when the earth acts…
+          </p>
+        </article>
+
+        <!-- Sep 30, 2026-->
+        <article class="post-card quote">
+          <div class="post-meta">
+            <span class="post-type">Quote</span>
+            <span class="post-date">Sep 30, 2026</span>
+          </div>
+          <blockquote class="quote-text">
+            ❝Accompany autumn on its journey, so that everything life has broken
+            inside you may fall away… and you may bloom anew.❞
+            <p class="author-note">&mdash; Anonymous</p>
+          </blockquote>
+        </article>
+
         <!-- Sep 29, 2026-->
         <article class="post-card essay">
           <div class="post-meta">
@@ -60,24 +94,11 @@
             of Damascus, the earth, too, was in labor...
           </p>
         </article>
-
-        <!-- Sep 30, 2026-->
-        <article class="post-card quote">
-          <div class="post-meta">
-            <span class="post-type">Quote</span>
-            <span class="post-date">Sep 30, 2026</span>
-          </div>
-          <blockquote class="quote-text">
-            “Accompany autumn on its journey, so that everything life has broken
-            inside you may fall away… and you may bloom anew.”
-            <p class="author-note">&mdash; Anonymous</p>
-          </blockquote>
-        </article>
       </main>
       <div class="bottom-divider"></div>
       <footer class="footer">
         <a
-          href="https://www.twitter.com/1952Journey"
+          href="https://www.x.com/1952Journey"
           class="btn"
           target="_blank"
           rel="noopener"
@@ -88,8 +109,7 @@
         </p>
       </footer>
     </div>
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
+    <script src="/assets/year.js"></script>
+    <script src="/assets/filter.js"></script>
   </body>
 </html>
