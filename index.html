@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ink & Irony</title>
     <link rel="icon" type="image/x-icon" href="/img/favicon.png" />
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="/css/main.css" />
   </head>
   <body>
     <div class="container">
@@ -13,10 +13,9 @@
         <div class="badge">1952 JOURNEY</div>
         <h1>Ink & Irony</h1>
         <p class="tagline">Ink on screen, irony in mind.</p>
-        <div class="divider"></div>
+        <div class="top-divider"></div>
       </header>
 
-      <!-- Hidden Radio Inputs for Pure CSS State -->
       <input
         type="radio"
         name="filter"
@@ -38,7 +37,6 @@
         class="filter-radio"
       />
 
-      <!-- Filter Buttons (Styled Labels) -->
       <nav class="nav">
         <label for="filter-all" class="btn">All</label>
         <label for="filter-essay" class="btn">Essays</label>
@@ -48,22 +46,35 @@
 
       <!-- Post Cards Grid -->
       <main class="feed">
-        <!-- Essay Entry -->
+        <!-- Sep 29, 2026-->
         <article class="post-card essay">
           <div class="post-meta">
             <span class="post-type">Essay</span>
             <span class="post-date">Sep 29, 2026</span>
           </div>
           <h2>
-            <a href="posts/yellow-bed.html">Giving Birth on a Yellow Bed...</a>
+            <a href="essays/yellow-bed.html">Giving Birth on a Yellow Bed</a>
           </h2>
           <p class="excerpt">
             On the day I was born, September 29, 1983, in one of the old houses
             of Damascus, the earth, too, was in labor...
           </p>
         </article>
-      </main>
 
+        <!-- Sep 30, 2026-->
+        <article class="post-card quote">
+          <div class="post-meta">
+            <span class="post-type">Quote</span>
+            <span class="post-date">Sep 30, 2026</span>
+          </div>
+          <blockquote class="quote-text">
+            “Accompany autumn on its journey, so that everything life has broken
+            inside you may fall away… and you may bloom anew.”
+            <p class="author-note">&mdash; Anonymous</p>
+          </blockquote>
+        </article>
+      </main>
+      <div class="bottom-divider"></div>
       <footer class="footer">
         <a
           href="https://www.twitter.com/1952Journey"
@@ -71,7 +82,7 @@
           target="_blank"
           rel="noopener"
           >Go stalk me on Twitter instead</a
-        >
+        ><br />
         <p class="copyright">
           &copy; <span id="year"></span> Ink & Irony - All Rights Reserved.
         </p>

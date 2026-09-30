@@ -19,8 +19,7 @@ body {
 .container {
   width: 100%;
   max-width: 640px;
-  /* Page Load Fade-In Animation */
-  animation: fadeIn 2s ease-out forwards;
+  animation: fadeIn 3s ease-out forwards;
 }
 
 @keyframes fadeIn {
@@ -34,7 +33,6 @@ body {
   }
 }
 
-/* Header */
 .header {
   text-align: center;
   margin-bottom: 28px;
@@ -54,6 +52,12 @@ h1 {
   color: #f0f6fc;
 }
 
+h2 {
+  font-size: 1.75rem;
+  letter-spacing: 2px;
+  color: #f0f6fc;
+}
+
 .tagline {
   font-size: 0.95rem;
   color: #8b949e;
@@ -62,19 +66,26 @@ h1 {
   letter-spacing: 1.5px;
 }
 
-.divider {
+.top-divider {
   height: 1px;
   background: #30363d;
   margin: 24px auto;
-  width: 60px;
+  width: 50%;
+  border: 0;
 }
 
-/* Hide Radio Inputs */
+.bottom-divider {
+  height: 1px;
+  background: #30363d;
+  margin: 40px auto;
+  width: 100%;
+  border: 0;
+}
+
 .filter-radio {
   display: none;
 }
 
-/* Navigation & Button Styling */
 .nav {
   display: flex;
   gap: 12px;
@@ -95,7 +106,7 @@ h1 {
   font-family: inherit;
   cursor: pointer;
   user-select: none;
-  transition: all 0.2s ease;
+  transition: all 3s ease;
 }
 
 .btn:hover {
@@ -104,7 +115,6 @@ h1 {
   color: #f0f6fc;
 }
 
-/* Pure CSS Active Button States */
 #filter-all:checked ~ .nav label[for="filter-all"],
 #filter-essay:checked ~ .nav label[for="filter-essay"],
 #filter-poem:checked ~ .nav label[for="filter-poem"],
@@ -114,7 +124,6 @@ h1 {
   color: #58a6ff;
 }
 
-/* Cards Feed Grid */
 .feed {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -131,9 +140,9 @@ h1 {
   justify-content: space-between;
   text-align: left;
   transition:
-    transform 2s ease,
-    border-color 2s ease;
-  animation: cardAppear 2s ease-out forwards;
+    transform 3s ease,
+    border-color 3s ease;
+  animation: cardAppear 3s ease-out forwards;
 }
 
 @keyframes cardAppear {
@@ -152,7 +161,6 @@ h1 {
   transform: translateY(-2px);
 }
 
-/* Pure CSS Filtering Logic */
 #filter-essay:checked ~ .feed .post-card:not(.essay),
 #filter-poem:checked ~ .feed .post-card:not(.poem),
 #filter-quote:checked ~ .feed .post-card:not(.quote) {
@@ -175,7 +183,7 @@ h1 {
 }
 
 .post-card h2 {
-  font-size: 1.25rem;
+  font-size: 1rem;
   margin-bottom: 8px;
 }
 
@@ -194,11 +202,13 @@ h1 {
   line-height: 1.5;
 }
 
-/* Formats */
+.essay-text {
+  line-height: 1.5;
+  font-size: 1.05rem;
+}
+
 .quote-text {
-  font-style: italic;
   font-size: 1.1rem;
-  color: #c9d1d9;
   line-height: 1.4;
   margin-top: 4px;
 }
@@ -206,13 +216,18 @@ h1 {
 .poem-preview {
   font-family: Georgia, serif;
   font-style: italic;
-  color: #c9d1d9;
   line-height: 1.6;
   white-space: pre-wrap;
   margin-top: 8px;
 }
 
-/* Footer */
+.author-note {
+  padding-top: 7px;
+  color: #8b949e;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
 .footer {
   text-align: center;
   margin-top: 48px;
@@ -226,13 +241,4 @@ h1 {
   font-size: 0.8rem;
   color: #8b949e;
   letter-spacing: 0.5px;
-}
-
-/* Essay End Divider */
-.divider {
-  border: 0;
-  height: 1px;
-  background: #30363d;
-  margin: 40px auto;
-  width: 100%; /* Or set to 60px / 50% for a subtle centered divider */
 }
