@@ -248,7 +248,6 @@ h2 {
 .reflection-text {
   font-size: 1.1rem;
   line-height: 1.4;
-  margin-top: 4px;
 }
 
 .author-note {
@@ -256,6 +255,118 @@ h2 {
   color: #8b949e;
   font-size: 1.1rem;
   font-weight: 550;
+}
+
+/* Archive Page Styles */
+.archive-container {
+  max-width: 720px;
+}
+
+.archive-link-container {
+  text-align: center;
+  margin-top: 36px;
+}
+
+.archive-btn {
+  padding: 12px 24px;
+  font-weight: 600;
+}
+
+.year-heading {
+  font-size: 2rem;
+  color: #58a6ff;
+  border-bottom: 1px solid #30363d;
+  padding-bottom: 8px;
+  margin-top: 32px;
+  margin-bottom: 20px;
+}
+
+.month-heading {
+  font-size: 1.2rem;
+  color: #8b949e;
+  margin: 16px 0 12px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.entry-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.entry-list li {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 8px 0;
+  border-bottom: 1px border #161b22;
+  font-size: 0.95rem;
+}
+
+.entry-date {
+  color: #8b949e;
+  font-size: 0.85rem;
+  min-width: 60px;
+}
+
+.entry-type {
+  color: #58a6ff;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  min-width: 90px;
+  font-weight: 600;
+}
+
+.entry-list a {
+  color: #f0f6fc;
+  text-decoration: none;
+}
+
+.entry-list a:hover {
+  color: #58a6ff;
+}
+
+.entry-title {
+  color: #c9d1d9;
+}
+
+.year-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.year-card {
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  padding: 24px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.year-card:hover {
+  border-color: #58a6ff;
+  transform: translateY(-2px);
+}
+
+.year-number {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #f0f6fc;
+}
+
+.year-count {
+  font-size: 0.85rem;
+  color: #8b949e;
 }
 
 footer {
@@ -267,7 +378,15 @@ footer {
   gap: 16px;
 }
 
+.footer-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .copyright {
+  margin-top: 24px;
   font-size: 0.8rem;
   color: #8b949e;
   letter-spacing: 0.5px;
