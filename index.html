@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ink & Irony</title>
     <link rel="icon" type="image/x-icon" href="/assets/favicon.png" />
-    <link rel="stylesheet" href="/assets/main.css" />
+    <link rel="stylesheet" href="/assets/layout.css" />
   </head>
   <body>
     <div class="container">
@@ -36,22 +36,46 @@
         id="filter-quote"
         class="filter-radio"
       />
+      <input
+        type="radio"
+        name="filter"
+        id="filter-reflection"
+        class="filter-radio"
+      />
 
       <nav class="nav">
         <label for="filter-all" class="btn">All</label>
         <label for="filter-essay" class="btn">Essays</label>
         <label for="filter-poem" class="btn">Poems</label>
         <label for="filter-quote" class="btn">Quotes</label>
+        <label for="filter-reflection" class="btn">Reflections</label>
       </nav>
 
       <!-- Post Cards Grid -->
       <main class="feed">
-        <!-- NEW POST - BEGIN -->
-        <!-- NEW POST - END -->
+        <!-- Oct 01, 2026-->
+        <article class="post-card reflection">
+          <div class="post-meta">
+            <div class="post-meta-left">
+              <img src="/img/che.jpg" alt="1952 Journey" class="meta-avatar" />
+              <span class="post-type">Reflection</span>
+            </div>
+            <span class="post-date">Oct 01, 2026</span>
+          </div>
+          <blockquote class="reflection-text">
+            October 1st…<br />
+            Another year comes full circle. I’ve survived so many years in this
+            miserable world, and for that, I am going to celebrate.
+          </blockquote>
+        </article>
 
+        <!-- Sep 30, 2026-->
         <article class="post-card poem">
           <div class="post-meta">
-            <span class="post-type">Poem</span>
+            <div class="post-meta-left">
+              <img src="/img/che.jpg" alt="1952 Journey" class="meta-avatar" />
+              <span class="post-type">Poem</span>
+            </div>
             <span class="post-date">Sep 30, 2026</span>
           </div>
           <h2>
@@ -70,7 +94,14 @@
         <!-- Sep 30, 2026-->
         <article class="post-card quote">
           <div class="post-meta">
-            <span class="post-type">Quote</span>
+            <div class="post-meta-left">
+              <img
+                src="/img/ink-pen.jpg"
+                alt="1952 Journey"
+                class="meta-avatar"
+              />
+              <span class="post-type">Quote</span>
+            </div>
             <span class="post-date">Sep 30, 2026</span>
           </div>
           <blockquote class="quote-text">
@@ -83,7 +114,10 @@
         <!-- Sep 29, 2026-->
         <article class="post-card essay">
           <div class="post-meta">
-            <span class="post-type">Essay</span>
+            <div class="post-meta-left">
+              <img src="/img/che.jpg" alt="1952 Journey" class="meta-avatar" />
+              <span class="post-type">Essay</span>
+            </div>
             <span class="post-date">Sep 29, 2026</span>
           </div>
           <h2>
@@ -95,7 +129,9 @@
           </p>
         </article>
       </main>
+
       <div class="bottom-divider"></div>
+
       <footer class="footer">
         <a
           href="https://www.x.com/1952Journey"
