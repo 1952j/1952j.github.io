@@ -1,36 +1,25 @@
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  background-color: #0d1117;
+  display: flex;
   color: #c9d1d9;
+  min-height: 100vh;
+  padding: 40px 20px;
+  justify-content: center;
+  background-color: #0d1117;
   font-family:
     ui-monospace, "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono",
     "Courier New", monospace;
-  min-height: 100vh;
-  padding: 40px 20px;
-  display: flex;
-  justify-content: center;
 }
 
 .container {
   width: 100%;
   max-width: 880px;
   animation: fadeIn 3s ease-out forwards;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(12px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 article {
@@ -43,48 +32,46 @@ header {
   margin-bottom: 28px;
 }
 
-.badge {
-  font-size: 0.75rem;
+h1,
+h2 {
+  color: #f0f6fc;
+  font-size: 1.75rem;
   letter-spacing: 2px;
-  color: #58a6ff;
-  margin-bottom: 12px;
-  font-weight: 600;
 }
 
 h1 {
   font-size: 2.5rem;
-  letter-spacing: 2px;
-  color: #f0f6fc;
 }
 
-h2 {
-  font-size: 1.75rem;
+.badge {
+  color: #58a6ff;
+  font-weight: 600;
+  font-size: 0.75rem;
   letter-spacing: 2px;
-  color: #f0f6fc;
+  margin-bottom: 12px;
 }
 
 .tagline {
-  font-size: 0.95rem;
-  color: #8b949e;
   margin-top: 8px;
-  text-transform: uppercase;
+  color: #8b949e;
+  font-size: 0.95rem;
   letter-spacing: 1.5px;
+  text-transform: uppercase;
 }
 
-.top-divider {
-  height: 1px;
-  background: #30363d;
-  margin: 24px auto;
-  width: 50%;
-  border: 0;
-}
-
+.top-divider,
 .bottom-divider {
   height: 1px;
   background: #30363d;
-  margin: 40px auto;
-  width: 100%;
-  border: 0;
+}
+
+.top-divider {
+  width: 50%;
+  margin: 25px auto;
+}
+
+.bottom-divider {
+  margin: 50px auto;
 }
 
 .filter-radio {
@@ -92,92 +79,68 @@ h2 {
 }
 
 .nav {
-  display: flex;
   gap: 12px;
-  justify-content: center;
+  display: flex;
   flex-wrap: wrap;
   margin-bottom: 36px;
-}
-
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  border: 1px solid #30363d;
-  border-radius: 6px;
-  color: #c9d1d9;
-  background-color: #161b22;
-  text-decoration: none;
-  text-align: center;
-  font-size: 0.9rem;
-  font-family: inherit;
-  cursor: pointer;
-  user-select: none;
-  transition: all 3s ease;
-}
-
-.btn:hover {
-  background-color: #21262d;
-  border-color: #8b949e;
-  color: #f0f6fc;
-}
-
-#filter-all:checked ~ .nav label[for="filter-all"],
-#filter-essay:checked ~ .nav label[for="filter-essay"],
-#filter-poem:checked ~ .nav label[for="filter-poem"],
-#filter-quote:checked ~ .nav label[for="filter-quote"],
-#filter-reflection:checked ~ .nav label[for="filter-reflection"] {
-  background-color: #21262d;
-  border-color: #58a6ff;
-  color: #58a6ff;
-}
-
-#filter-essay:checked ~ .feed .post-card:not(.essay),
-#filter-poem:checked ~ .feed .post-card:not(.poem),
-#filter-quote:checked ~ .feed .post-card:not(.quote),
-#filter-reflection:checked ~ .feed .post-card:not(.reflection) {
-  display: none;
-}
-
-#filter-quote:checked ~ .feed,
-#filter-reflection:checked ~ .feed {
-  grid-template-columns: 1fr;
+  justify-content: center;
 }
 
 .feed {
+  gap: 20px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
 }
 
-.post-card {
-  background: #161b22;
+.btn {
+  cursor: pointer;
+  color: #c9d1d9;
+  font-size: 0.9rem;
+  user-select: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-align: center;
+  font-family: inherit;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 3s ease;
   border: 1px solid #30363d;
-  border-radius: 8px;
+  background-color: #161b22;
+}
+
+.card {
   padding: 20px;
   display: flex;
+  border-radius: 8px;
+  text-decoration: none;
+  background: #161b22;
   flex-direction: column;
+  transition: all 3s ease;
+  border: 1px solid #30363d;
   justify-content: space-between;
-  text-align: left;
-  transition:
-    transform 3s ease,
-    border-color 3s ease;
   animation: cardAppear 3s ease-out forwards;
 }
 
-@keyframes cardAppear {
-  from {
-    opacity: 0;
-    transform: translateY(16px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.card-center {
+  align-items: center;
 }
 
-.post-card:hover {
-  border-color: #58a6ff;
-  transform: translateY(-2px);
+.btn:hover,
+.card:hover {
+  color: #f0f6fc;
+  border-color: #8b949e;
+  background-color: #21262d;
+}
+
+.card-count {
+  color: #8b949e;
+  font-size: 0.85rem;
+}
+
+.card-number {
+  color: #f0f6fc;
+  font-size: 1.8rem;
+  font-weight: bold;
 }
 
 .post-meta {
@@ -210,18 +173,19 @@ h2 {
   font-weight: 600;
 }
 
-.post-card h2 {
+.card h2 {
   font-size: 1rem;
   margin-bottom: 8px;
 }
 
-.post-card h2 a {
+.card h2 a {
   color: #f0f6fc;
   text-decoration: none;
 }
 
-.post-card h2 a:hover {
+.card h2 a:hover {
   color: #58a6ff;
+  transition: all 1.5s ease;
 }
 
 .excerpt {
@@ -230,22 +194,19 @@ h2 {
   line-height: 1.5;
 }
 
-.essay-title,
-.poem-title {
+.post-title {
   font-size: 1.5rem;
   font-weight: bold;
   text-align: left;
   margin-bottom: 20px;
 }
 
-.essay-text,
-.poem-text {
+.post-text {
   line-height: 1.5;
   font-size: 1.05rem;
 }
 
-.quote-text,
-.reflection-text {
+.short-text {
   font-size: 1.1rem;
   line-height: 1.4;
 }
@@ -254,119 +215,7 @@ h2 {
   padding-top: 7px;
   color: #8b949e;
   font-size: 1.1rem;
-  font-weight: 550;
-}
-
-/* Archive Page Styles */
-.archive-container {
-  max-width: 720px;
-}
-
-.archive-link-container {
-  text-align: center;
-  margin-top: 36px;
-}
-
-.archive-btn {
-  padding: 12px 24px;
   font-weight: 600;
-}
-
-.year-heading {
-  font-size: 2rem;
-  color: #58a6ff;
-  border-bottom: 1px solid #30363d;
-  padding-bottom: 8px;
-  margin-top: 32px;
-  margin-bottom: 20px;
-}
-
-.month-heading {
-  font-size: 1.2rem;
-  color: #8b949e;
-  margin: 16px 0 12px 0;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.entry-list {
-  list-style: none;
-  padding-left: 0;
-}
-
-.entry-list li {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  padding: 8px 0;
-  border-bottom: 1px border #161b22;
-  font-size: 0.95rem;
-}
-
-.entry-date {
-  color: #8b949e;
-  font-size: 0.85rem;
-  min-width: 60px;
-}
-
-.entry-type {
-  color: #58a6ff;
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  min-width: 90px;
-  font-weight: 600;
-}
-
-.entry-list a {
-  color: #f0f6fc;
-  text-decoration: none;
-}
-
-.entry-list a:hover {
-  color: #58a6ff;
-}
-
-.entry-title {
-  color: #c9d1d9;
-}
-
-.year-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 16px;
-  margin-top: 24px;
-}
-
-.year-card {
-  background: #161b22;
-  border: 1px solid #30363d;
-  border-radius: 8px;
-  padding: 24px;
-  text-decoration: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-  transition:
-    transform 0.2s ease,
-    border-color 0.2s ease;
-}
-
-.year-card:hover {
-  border-color: #58a6ff;
-  transform: translateY(-2px);
-}
-
-.year-number {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #f0f6fc;
-}
-
-.year-count {
-  font-size: 0.85rem;
-  color: #8b949e;
 }
 
 footer {
@@ -390,4 +239,47 @@ footer {
   font-size: 0.8rem;
   color: #8b949e;
   letter-spacing: 0.5px;
+}
+
+#filter-all:checked ~ .nav label[for="filter-all"],
+#filter-essay:checked ~ .nav label[for="filter-essay"],
+#filter-fragment:checked ~ .nav label[for="filter-fragment"],
+#filter-poem:checked ~ .nav label[for="filter-poem"],
+#filter-quote:checked ~ .nav label[for="filter-quote"] {
+  color: #58a6ff;
+  border-color: #58a6ff;
+  background-color: #21262d;
+}
+
+#filter-essay:checked ~ .feed .card:not(.essay),
+#filter-fragment:checked ~ .feed .card:not(.fragment),
+#filter-poem:checked ~ .feed .card:not(.poem),
+#filter-quote:checked ~ .feed .card:not(.quote) {
+  display: none;
+}
+
+#filter-quote:checked ~ .feed {
+  grid-template-columns: 1fr;
+}
+
+@keyframes cardAppear {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

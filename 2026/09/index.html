@@ -29,6 +29,12 @@
         id="filter-essay"
         class="filter-radio"
       />
+      <input
+        type="radio"
+        name="filter"
+        id="filter-fragment"
+        class="filter-radio"
+      />
       <input type="radio" name="filter" id="filter-poem" class="filter-radio" />
       <input
         type="radio"
@@ -36,28 +42,21 @@
         id="filter-quote"
         class="filter-radio"
       />
-      <input
-        type="radio"
-        name="filter"
-        id="filter-reflection"
-        class="filter-radio"
-      />
 
       <nav class="nav">
-        <a href="/" class="btn">&laquo; Home</a>
-
+        <a href="/archive.html" class="btn">&laquo; All Years</a>
         <a href="/2026/" class="btn">2026 Months &raquo;</a>
       </nav>
       <nav class="nav">
         <label for="filter-all" class="btn">All</label>
         <label for="filter-essay" class="btn">Essays</label>
+        <label for="filter-fragment" class="btn">Fragments</label>
         <label for="filter-poem" class="btn">Poems</label>
         <label for="filter-quote" class="btn">Quotes</label>
-        <label for="filter-reflection" class="btn">Reflections</label>
       </nav>
 
       <main class="feed">
-        <article class="post-card poem">
+        <article class="card poem">
           <div class="post-meta">
             <div class="post-meta-left">
               <img
@@ -83,7 +82,7 @@
         </article>
 
         <!-- Sep 30, 2026-->
-        <article class="post-card quote">
+        <article class="card quote">
           <div class="post-meta">
             <div class="post-meta-left">
               <img
@@ -95,7 +94,7 @@
             </div>
             <time datetime="2026-09-30">Sep 30, 2026</time>
           </div>
-          <blockquote class="quote-text">
+          <blockquote class="short-text">
             ❝Accompany autumn on its journey, so that everything life has broken
             inside you may fall away… and you may bloom anew.❞
             <p class="author-note">&mdash; Anonymous</p>
@@ -103,7 +102,7 @@
         </article>
 
         <!-- Sep 29, 2026-->
-        <article class="post-card essay">
+        <article class="card essay">
           <div class="post-meta">
             <div class="post-meta-left">
               <img

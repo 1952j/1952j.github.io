@@ -29,6 +29,12 @@
         id="filter-essay"
         class="filter-radio"
       />
+      <input
+        type="radio"
+        name="filter"
+        id="filter-fragment"
+        class="filter-radio"
+      />
       <input type="radio" name="filter" id="filter-poem" class="filter-radio" />
       <input
         type="radio"
@@ -36,28 +42,45 @@
         id="filter-quote"
         class="filter-radio"
       />
-      <input
-        type="radio"
-        name="filter"
-        id="filter-reflection"
-        class="filter-radio"
-      />
 
       <nav class="nav">
         <label for="filter-all" class="btn">All</label>
         <label for="filter-essay" class="btn">Essays</label>
+        <label for="filter-fragment" class="btn">Fragments</label>
         <label for="filter-poem" class="btn">Poems</label>
         <label for="filter-quote" class="btn">Quotes</label>
-        <label for="filter-reflection" class="btn">Reflections</label>
       </nav>
 
       <!-- Post Cards Grid -->
       <main class="feed">
         <!-- NEW POST GOES HERE -->
-        <!-- NEW POST GOES HERE -->
+
+        <article class="card fragment">
+          <div class="post-meta">
+            <div class="post-meta-left">
+              <img
+                src="/assets/che.jpg"
+                alt="1952 Journey"
+                class="meta-avatar"
+              />
+              <span class="post-type">fragment</span>
+            </div>
+            <time datetime="2026-10-02">Oct 02, 2026</time>
+          </div>
+          <h2>
+            <a href="/2026/10/her-handbag.html">Her Handbag</a>
+          </h2>
+          <p class="excerpt">
+            I don’t know<br />
+            how she carries<br />
+            an entire home<br />
+            inside a small handbag…<br />
+            ………<br />
+          </p>
+        </article>
 
         <!-- Oct 01, 2026-->
-        <article class="post-card poem">
+        <article class="card poem">
           <div class="post-meta">
             <div class="post-meta-left">
               <img
@@ -67,7 +90,7 @@
               />
               <span class="post-type">poem</span>
             </div>
-            <time datetime="2026-09-30">Oct 01, 2026</time>
+            <time datetime="2026-10-01">Oct 01, 2026</time>
           </div>
           <h2>
             <a href="/2026/10/my-birthday.html">My Birthday</a>
@@ -81,7 +104,7 @@
         </article>
 
         <!-- Oct 01, 2026-->
-        <article class="post-card reflection">
+        <article class="card fragment">
           <div class="post-meta">
             <div class="post-meta-left">
               <img
@@ -89,18 +112,18 @@
                 alt="1952 Journey"
                 class="meta-avatar"
               />
-              <span class="post-type">reflection</span>
+              <span class="post-type">Fragment</span>
             </div>
             <time datetime="2026-10-01">Oct 01, 2026</time>
           </div>
-          <blockquote class="reflection-text">
+          <blockquote class="short-text">
             October 1st…<br />
             Another year comes full circle. I’ve survived so many years in this
             miserable world, and for that, I am going to celebrate.
           </blockquote>
         </article>
 
-        <article class="post-card poem">
+        <article class="card poem">
           <div class="post-meta">
             <div class="post-meta-left">
               <img
@@ -126,7 +149,7 @@
         </article>
 
         <!-- Sep 30, 2026-->
-        <article class="post-card quote">
+        <article class="card quote">
           <div class="post-meta">
             <div class="post-meta-left">
               <img
@@ -138,7 +161,7 @@
             </div>
             <time datetime="2026-09-30">Sep 30, 2026</time>
           </div>
-          <blockquote class="quote-text">
+          <blockquote class="short-text">
             ❝Accompany autumn on its journey, so that everything life has broken
             inside you may fall away… and you may bloom anew.❞
             <p class="author-note">&mdash; Anonymous</p>
@@ -146,7 +169,7 @@
         </article>
 
         <!-- Sep 29, 2026-->
-        <article class="post-card essay">
+        <article class="card essay">
           <div class="post-meta">
             <div class="post-meta-left">
               <img
