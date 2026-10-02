@@ -22,6 +22,22 @@ body {
   animation: fadeIn 3s ease-out forwards;
 }
 
+.btn {
+  cursor: pointer;
+  color: #c9d1d9;
+  font-size: 0.9rem;
+  user-select: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-align: center;
+  font-family: inherit;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 3s ease;
+  border: 1px solid #30363d;
+  background-color: #161b22;
+}
+
 article {
   user-select: none;
   -webkit-user-select: none;
@@ -86,29 +102,19 @@ h1 {
   justify-content: center;
 }
 
-.feed {
+.feed,
+.archive {
   gap: 20px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
-.btn {
-  cursor: pointer;
-  color: #c9d1d9;
-  font-size: 0.9rem;
-  user-select: none;
-  padding: 10px 20px;
-  border-radius: 6px;
-  text-align: center;
-  font-family: inherit;
-  text-decoration: none;
-  display: inline-block;
-  transition: all 3s ease;
-  border: 1px solid #30363d;
-  background-color: #161b22;
+.archive {
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 }
 
-.card {
+.post-card,
+.archive-card {
   padding: 20px;
   display: flex;
   border-radius: 8px;
@@ -121,84 +127,71 @@ h1 {
   animation: cardAppear 3s ease-out forwards;
 }
 
-.card-center {
+.archive-card {
+  font-size: 2rem;
+  color: #f0f6fc;
+  font-weight: bold;
   align-items: center;
 }
 
+.post-card h2 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.post-card h2 a {
+  color: #f0f6fc;
+  text-decoration: none;
+  transition: all 3s ease;
+}
+
+.post-card h2 a:hover {
+  color: #58a6ff;
+  transition: all 3s ease;
+}
+
 .btn:hover,
-.card:hover {
+.post-card:hover,
+.archive-card:hover {
   color: #f0f6fc;
   border-color: #8b949e;
   background-color: #21262d;
 }
 
-.card-count {
-  color: #8b949e;
-  font-size: 0.85rem;
-}
-
-.card-number {
-  color: #f0f6fc;
-  font-size: 1.8rem;
-  font-weight: bold;
-}
-
 .post-meta {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 0.8rem;
   color: #8b949e;
+  font-size: 0.8rem;
+  align-items: center;
   margin-bottom: 12px;
+  justify-content: space-between;
 }
 
 .post-meta-left {
+  gap: 10px;
   display: flex;
   align-items: center;
-  gap: 10px;
 }
 
 .meta-avatar {
   width: 35px;
   height: 35px;
-  border-radius: 25%;
   object-fit: cover;
+  border-radius: 25%;
   border: 1px solid #30363d;
-}
-
-.post-type {
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: #58a6ff;
-  font-weight: 600;
-}
-
-.card h2 {
-  font-size: 1rem;
-  margin-bottom: 8px;
-}
-
-.card h2 a {
-  color: #f0f6fc;
-  text-decoration: none;
-}
-
-.card h2 a:hover {
-  color: #58a6ff;
-  transition: all 1.5s ease;
-}
-
-.excerpt {
-  color: #8b949e;
-  font-size: 0.95rem;
-  line-height: 1.5;
 }
 
 .post-title {
   font-size: 1.5rem;
   font-weight: bold;
-  text-align: left;
   margin-bottom: 20px;
+}
+
+.post-type {
+  font-weight: 600;
+  color: #58a6ff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .post-text {
@@ -207,31 +200,47 @@ h1 {
 }
 
 .short-text {
-  font-size: 1.1rem;
   line-height: 1.4;
+  font-size: 1.1rem;
+}
+
+.post-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 24px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #30363d;
+}
+
+.excerpt {
+  line-height: 1.5;
+  color: #8b949e;
+  font-size: 0.95rem;
 }
 
 .author-note {
+  font-weight: 600;
   padding-top: 7px;
   color: #8b949e;
   font-size: 1.1rem;
-  font-weight: 600;
 }
 
 footer {
-  text-align: center;
-  margin-top: 48px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   gap: 16px;
+  display: flex;
+  margin-top: 48px;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .footer-actions {
-  display: flex;
   gap: 12px;
-  justify-content: center;
+  display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .copyright {
@@ -251,10 +260,10 @@ footer {
   background-color: #21262d;
 }
 
-#filter-essay:checked ~ .feed .card:not(.essay),
-#filter-fragment:checked ~ .feed .card:not(.fragment),
-#filter-poem:checked ~ .feed .card:not(.poem),
-#filter-quote:checked ~ .feed .card:not(.quote) {
+#filter-essay:checked ~ .feed .post-card:not(.essay),
+#filter-fragment:checked ~ .feed .post-card:not(.fragment),
+#filter-poem:checked ~ .feed .post-card:not(.poem),
+#filter-quote:checked ~ .feed .post-card:not(.quote) {
   display: none;
 }
 

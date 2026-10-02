@@ -1,36 +1,44 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Archive &middot; Ink & Irony</title>
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.png" />
-    <link rel="stylesheet" href="/assets/style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <header>
-        <div class="badge">1952 JOURNEY</div>
-        <h1>Archive</h1>
-        <p class="tagline">Select a year to explore past writings.</p>
-        <div class="top-divider"></div>
-      </header>
-      <nav class="nav">
-        <a href="/" class="btn">&laquo; Home</a>
-      </nav>
-      <main class="feed">
-        <a href="2026/" class="card card-center">
-          <span class="card-number">2026</span>
-          <span class="card-count">06 Posts</span>
-        </a>
-      </main>
-      <div class="bottom-divider"></div>
-      <footer>
-        <p class="copyright">
-          &copy; <span id="year"></span> Ink & Irony - All Rights Reserved.
-        </p>
-      </footer>
-    </div>
-    <script src="/assets/year.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="refresh" content="900" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Archive &middot; Ink & Irony</title>
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.png" />
+  <link rel="stylesheet" href="/assets/layout.css" />
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="badge">1952 JOURNEY</div>
+      <h1>Archive</h1>
+      <p class="tagline">Select a year to explore past writings.</p>
+      <div class="top-divider"></div>
+    </header>
+    <nav class="nav">
+      <a href="/" class="btn">&laquo; Home</a>
+    </nav>
+
+    <main class="archive">
+      <a href="/2026/" class="archive-card">
+        <span>2026</span>
+
+        <!-- [INCREASE ME] -->
+        <span class="excerpt">07 Posts</span>
+      </a>
+    </main>
+
+    <div class="bottom-divider"></div>
+    <footer>
+      <p class="copyright">
+        &copy; <span id="year"></span> Ink & Irony - All Rights Reserved.
+      </p>
+    </footer>
+  </div>
+  <script src="/assets/year.js"></script>
+</body>
+
 </html>
