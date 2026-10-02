@@ -78,16 +78,12 @@ h1 {
 .top-divider,
 .bottom-divider {
   height: 1px;
+  margin: 25px auto;
   background: #30363d;
 }
 
 .top-divider {
   width: 50%;
-  margin: 25px auto;
-}
-
-.bottom-divider {
-  margin: 50px auto;
 }
 
 .filter-radio {
@@ -230,7 +226,7 @@ h1 {
 footer {
   gap: 16px;
   display: flex;
-  margin-top: 48px;
+  margin-top: 25px;
   text-align: center;
   align-items: center;
   flex-direction: column;
