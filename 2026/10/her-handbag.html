@@ -4,29 +4,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/assets/layout.css" />
   <link rel="icon" type="image/x-icon" href="/assets/favicon.png" />
   <title>Her Handbag</title>
-  <link rel="stylesheet" href="/assets/layout.css" />
 </head>
 
 <body>
   <div class="container">
-    <header>
-      <a class="btn" href="/index.html">&laquo; Home</a>
-      <a class="btn" href="/2026/10/">October 2026 &raquo;</a>
-    </header>
-    <div class="top-divider"></div>
+    <div class="divider"></div>
     <article>
       <div class="post-meta">
         <div class="post-meta-left">
           <img class="meta-avatar" src="/assets/che.jpg" alt="1952 Journey" />
-          <span class="post-type">fragment</span>
+          <span class="post-type" category="fragment"></span>
         </div>
         <time datetime="2026-10-02">Oct 02, 2026</time>
       </div>
-
       <div class="post-title">Her Handbag</div>
-
       <div class="post-text">
         <p>
           I don’t know how she carries an entire home<br />
@@ -42,10 +36,14 @@
           folded away in the corner,<br />
           where no one can see it.<br />
         </p>
-        <div class="bottom-divider"></div>
       </div>
     </article>
+    <div class="divider"></div>
     <footer>
+      <div class="footer-actions">
+        <a class="btn" href="/">&laquo; Feed</a>
+        <a class="btn" href="/2026/10/">October 2026 &raquo;</a>
+      </div>
       <p class="copyright">
         &copy; <span id="year"></span> Ink & Irony - All Rights Reserved.
       </p>

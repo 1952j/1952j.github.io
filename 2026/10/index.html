@@ -5,9 +5,9 @@
   <meta charset="UTF-8" />
   <meta http-equiv="refresh" content="900" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>October 2026</title>
-  <link rel="icon" type="image/x-icon" href="/assets/favicon.png" />
   <link rel="stylesheet" href="/assets/layout.css" />
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.png" />
+  <title>October 2026</title>
 </head>
 
 <body>
@@ -16,35 +16,35 @@
       <div class="badge">1952 JOURNEY</div>
       <h1>October 2026</h1>
       <p class="tagline">Archive feed for October 2026</p>
-      <div class="top-divider"></div>
     </header>
-    <nav class="nav">
-      <a href="/archive.html" class="btn">&laquo; All Years</a>
-      <a href="/2026/" class="btn">2026 Months &raquo;</a>
-    </nav>
-    <input type="radio" name="filter" id="filter-poem" class="filter-radio" />
-    <input type="radio" name="filter" id="filter-essay" class="filter-radio" />
-    <input type="radio" name="filter" id="filter-quote" class="filter-radio" />
-    <input type="radio" name="filter" id="filter-fragment" class="filter-radio" />
-    <input type="radio" name="filter" id="filter-all" class="filter-radio" checked />
-    <nav class="nav">
-      <label for="filter-all" class="btn">All</label>
-      <label for="filter-essay" class="btn">Essays</label>
-      <label for="filter-fragment" class="btn">Fragments</label>
-      <label for="filter-poem" class="btn">Poems</label>
-      <label for="filter-quote" class="btn">Quotes</label>
-    </nav>
+    <div class="divider"></div>
     <main class="feed">
 
       <!-- [NEW CONTENT] -->
-
-      <article class="post-card fragment">
+      <article class="post-card">
         <div class="post-meta">
           <div class="post-meta-left">
             <img src="/assets/che.jpg" alt="1952 Journey" class="meta-avatar" />
-            <span class="post-type">fragment</span>
+            <span class="post-type" category="reflection"></span>
           </div>
-          <time datetime="YYYY-MM-DD">Oct 03, 2026</time>
+          <time datetime="2026-10-03">Oct 03, 2026</time>
+        </div>
+        <h2>
+          <a href="/2026/10/outside-the-herd.html">Outside the Herd</a>
+        </h2>
+        <p class="excerpt">People do not always love you for who you truly are…<br>
+          They love the version of you that does not unsettle them.<br>
+          ………
+        </p>
+      </article>
+
+      <article class="post-card">
+        <div class="post-meta">
+          <div class="post-meta-left">
+            <img src="/assets/che.jpg" alt="1952 Journey" class="meta-avatar" />
+            <span class="post-type" category="fragment"></span>
+          </div>
+          <time datetime="2026-10-03">Oct 03, 2026</time>
         </div>
         <h2>
           <a href="/2026/10/one-sided.html">One-sided</a>
@@ -56,11 +56,11 @@
         </p>
       </article>
 
-      <article class="post-card fragment">
+      <article class="post-card">
         <div class="post-meta">
           <div class="post-meta-left">
             <img src="/assets/che.jpg" alt="1952 Journey" class="meta-avatar" />
-            <span class="post-type">fragment</span>
+            <span class="post-type" category="essay"></span>
           </div>
           <time datetime="2026-10-02">Oct 02, 2026</time>
         </div>
@@ -75,11 +75,11 @@
         </p>
       </article>
 
-      <article class="post-card fragment">
+      <article class="post-card">
         <div class="post-meta">
           <div class="post-meta-left">
             <img src="/assets/che.jpg" alt="1952 Journey" class="meta-avatar" />
-            <span class="post-type">fragment</span>
+            <span class="post-type" category="fragment"></span>
           </div>
           <time datetime="2026-10-02">Oct 02, 2026</time>
         </div>
@@ -100,7 +100,7 @@
         <div class="post-meta">
           <div class="post-meta-left">
             <img src="/assets/che.jpg" alt="1952 Journey" class="meta-avatar" />
-            <span class="post-type">poem</span>
+            <span class="post-type" category="poem"></span>
           </div>
           <time datetime="2026-10-01">Oct 01, 2026</time>
         </div>
@@ -115,11 +115,11 @@
         </p>
       </article>
 
-      <article class="post-card fragment">
+      <article class="post-card">
         <div class="post-meta">
           <div class="post-meta-left">
             <img src="/assets/che.jpg" alt="1952 Journey" class="meta-avatar" />
-            <span class="post-type">Fragment</span>
+            <span class="post-type" category="reflection"></span>
           </div>
           <time datetime="2026-10-01">Oct 01, 2026</time>
         </div>
@@ -130,10 +130,12 @@
         </blockquote>
       </article>
     </main>
-
-    <div class="bottom-divider"></div>
-
+    <div class="divider"></div>
     <footer>
+      <div class="footer-actions">
+        <a href="/" class="btn">&laquo; Feed</a>
+        <a href="/2026" class="btn">2026 Months &raquo;</a>
+      </div>
       <p class="copyright">
         &copy; <span id="year"></span> Ink & Irony - All Rights Reserved.
       </p>
