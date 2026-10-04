@@ -1,3 +1,14 @@
+:root {
+  --bg: #0d1117;
+  --text: #c9d1d9;
+  --accent: #58a6ff;
+  --border: #30363d;
+  --surface: #161b22;
+  --text-muted: #8b949e;
+  --text-bright: #f0f6fc;
+  --surface-hover: #21262d;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,11 +17,11 @@
 
 body {
   display: flex;
-  color: #c9d1d9;
   min-height: 100vh;
+  color: var(--text);
   padding: 40px 20px;
   justify-content: center;
-  background-color: #0d1117;
+  background-color: var(--bg);
   font-family:
     ui-monospace, "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono",
     "Courier New", monospace;
@@ -18,13 +29,13 @@ body {
 
 .container {
   width: 100%;
-  max-width: 880px;
+  max-width: 920px;
   animation: fadeIn 3s ease-out forwards;
 }
 
 .btn {
   cursor: pointer;
-  color: #c9d1d9;
+  color: var(--text);
   font-size: 0.9rem;
   user-select: none;
   padding: 10px 20px;
@@ -34,8 +45,8 @@ body {
   text-decoration: none;
   display: inline-block;
   transition: all 3s ease;
-  border: 1px solid #30363d;
-  background-color: #161b22;
+  border: 1px solid var(--border);
+  background-color: var(--surface);
 }
 
 article {
@@ -45,14 +56,16 @@ article {
 
 header {
   text-align: center;
-  margin-bottom: 28px;
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border);
 }
 
 h1,
 h2 {
-  color: #f0f6fc;
   font-size: 1.75rem;
   letter-spacing: 2px;
+  color: var(--text-bright);
 }
 
 h1 {
@@ -60,25 +73,20 @@ h1 {
 }
 
 .badge {
-  color: #58a6ff;
   font-weight: 600;
   font-size: 0.75rem;
   letter-spacing: 2px;
   margin-bottom: 12px;
+  color: var(--accent);
+  text-transform: uppercase;
 }
 
 .tagline {
   margin-top: 8px;
-  color: #8b949e;
   font-size: 0.95rem;
   letter-spacing: 1.5px;
+  color: var(--text-muted);
   text-transform: uppercase;
-}
-
-.divider {
-  height: 1px;
-  margin: 25px auto;
-  background: #30363d;
 }
 
 .filter-radio {
@@ -99,25 +107,46 @@ h1 {
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 }
 
+.col-span-2 {
+  grid-column: span 2;
+}
+
+.col-span-3 {
+  grid-column: span 3;
+}
+
+@media (max-width: 650px) {
+  .col-span-2,
+  .col-span-3 {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 900px) {
+  .col-span-3 {
+    grid-column: span 2;
+  }
+}
+
 .post-card,
 .archive-card {
   padding: 20px;
   display: flex;
   border-radius: 8px;
   text-decoration: none;
-  background: #161b22;
+  background: var(--surface);
   flex-direction: column;
   transition: all 3s ease;
-  border: 1px solid #30363d;
+  border: 1px solid var(--border);
   justify-content: space-between;
-  animation: cardAppear 3s ease-out forwards;
+  animation: fadeIn 3s ease-out forwards;
 }
 
 .archive-card {
   font-size: 2rem;
-  color: #f0f6fc;
   font-weight: bold;
   align-items: center;
+  color: var(--text-bright);
 }
 
 .post-card h2 {
@@ -126,30 +155,53 @@ h1 {
 }
 
 .post-card h2 a {
-  color: #f0f6fc;
   text-decoration: none;
   transition: all 3s ease;
+  color: var(--text-bright);
 }
 
 .post-card h2 a:hover {
-  color: #58a6ff;
-  transition: all 3s ease;
+  color: var(--accent);
 }
 
 .btn:hover,
 .post-card:hover,
 .archive-card:hover {
-  color: #f0f6fc;
-  border-color: #8b949e;
-  background-color: #21262d;
+  color: var(--text-bright);
+  border-color: var(--text-muted);
+  background-color: var(--surface-hover);
+}
+
+.post-header {
+  display: flex;
+  font-size: 0.75rem;
+  align-items: baseline;
+  letter-spacing: 0.75px;
+  justify-content: space-between;
+}
+
+.post-badge {
+  color: var(--accent);
+  text-transform: uppercase;
+}
+
+.post-tagline {
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+.post-site-title {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: var(--text-bright);
 }
 
 .post-meta {
   display: flex;
-  color: #8b949e;
   font-size: 0.8rem;
   align-items: center;
   margin-bottom: 12px;
+  color: var(--text-muted);
   justify-content: space-between;
 }
 
@@ -164,7 +216,7 @@ h1 {
   height: 35px;
   object-fit: cover;
   border-radius: 25%;
-  border: 1px solid #30363d;
+  border: 1px solid var(--border);
 }
 
 .post-title {
@@ -174,22 +226,10 @@ h1 {
 }
 
 .post-type::before {
-  content: attr(category);
   font-weight: 600;
   letter-spacing: 1px;
+  content: attr(category);
   text-transform: uppercase;
-}
-
-.post-type[category="fragment"] {
-  color: #e3b341;
-}
-
-.post-type[category="reflection"] {
-  color: #d2a8ff;
-}
-
-.post-type[category="quote"] {
-  color: #56d364;
 }
 
 .post-type[category="poem"] {
@@ -200,6 +240,18 @@ h1 {
   color: #39c5cf;
 }
 
+.post-type[category="quote"] {
+  color: #56d364;
+}
+
+.post-type[category="fragment"] {
+  color: #e3b341;
+}
+
+.post-type[category="reflection"] {
+  color: #d2a8ff;
+}
+
 .post-text {
   line-height: 1.5;
   font-size: 1.05rem;
@@ -208,47 +260,50 @@ h1 {
 .post-text blockquote {
   margin: 16px 0;
   line-height: 1.6;
-  color: #8b949e;
   padding-left: 18px;
   font-style: italic;
-  border-left: 2px solid #30363d;
+  color: var(--text-muted);
+  border-left: 2px solid var(--border);
 }
 
-.short-text {
-  line-height: 1.4;
-  font-size: 1.1rem;
-}
-
-.post-image {
+.post-image,
+.post-video {
   width: 100%;
-  height: auto;
   display: block;
-  margin-top: 24px;
   object-fit: cover;
   border-radius: 8px;
-  border: 1px solid #30363d;
+  margin: 24px auto 0;
+  border: 1px solid var(--border);
+}
+
+.post-video {
+  height: auto;
+  max-width: 400px;
+  margin-left: 0;
 }
 
 .excerpt {
   line-height: 1.5;
-  color: #8b949e;
   font-size: 0.95rem;
+  color: var(--text-muted);
 }
 
 .author-note {
   font-weight: 600;
   padding-top: 7px;
-  color: #8b949e;
   font-size: 1.1rem;
+  color: var(--text-muted);
 }
 
 footer {
   gap: 15px;
   display: flex;
-  margin-top: 28px;
+  margin-top: 25px;
+  padding-top: 20px;
   text-align: center;
   align-items: center;
   flex-direction: column;
+  border-top: 1px solid var(--border);
 }
 
 .footer-actions {
@@ -261,19 +316,8 @@ footer {
 .copyright {
   margin-top: 24px;
   font-size: 0.8rem;
-  color: #8b949e;
   letter-spacing: 0.5px;
-}
-
-@keyframes cardAppear {
-  from {
-    opacity: 0;
-    transform: translateY(16px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  color: var(--text-muted);
 }
 
 @keyframes fadeIn {
