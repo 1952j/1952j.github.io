@@ -84,10 +84,6 @@ header {
   grid-column: span 3;
 }
 
-.article {
-  user-select: none;
-}
-
 .post-card,
 .header-card,
 .archive-card {
@@ -305,6 +301,7 @@ footer {
 
 article {
   user-select: none;
+  -webkit-user-select: none;
 }
 
 .card-pin {
