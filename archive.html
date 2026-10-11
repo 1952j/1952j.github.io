@@ -13,22 +13,39 @@
 <body>
   <div class="container">
     <header>
-      <div class="badge">1952 JOURNEY</div>
-      <h1>Archive</h1>
-      <p class="tagline">Select a year to explore past writings.</p>
+      <div>
+        <span class="status-dot"></span> Online Notebook
+      </div>
+      <div>
+        <a href="/" class="nav-link">Feed</a>
+        <a href="/rss.xml" class="nav-link">RSS</a>
+      </div>
     </header>
 
     <main class="archive">
-      <a href="/2026/" class="archive-card">
+      <article class="header-card">
+        <span class="card-pin">📌</span>
+        <h1>Archive</h1>
+        <p class="tagline">Select a year to explore past writings.</p>
+        <div
+          style="margin-top: 15px; border-top: 1px solid var(--border); padding-top: 10px; display: flex; justify-content: space-around; text-align: center; font-size: 0.75rem; color: var(--text-muted);">
+          <div><strong style="display: block; font-size: 1rem; color: var(--cat-essay);">2</strong>Essays</div>
+          <div><strong style="display: block; font-size: 1rem; color: var(--cat-fragment);">5</strong>Fragments</div>
+          <div><strong style="display: block; font-size: 1rem; color: var(--cat-quote);">4</strong>Quotes</div>
+          <div><strong style="display: block; font-size: 1rem; color: var(--cat-poem);">2</strong>Poems</div>
+          <div><strong style="display: block; font-size: 1rem; color: var(--cat-reflection);">2</strong>Reflections
+          </div>
+        </div>
+      </article>
+
+      <a class="archive-card" href="/2026/">
         <span>2026</span>
-        <span class="excerpt">14 Posts</span> <!-- [INCREASE POST COUNT] -->
+        <span class="excerpt" style="margin: 0;">15 Posts</span>
       </a>
+
     </main>
 
     <footer>
-      <div class="footer-actions">
-        <a href="/" class="btn">&laquo; Feed</a>
-      </div>
       <p class="copyright">
         &copy; <span id="year"></span> Ink & Irony - All Rights Reserved.
       </p>

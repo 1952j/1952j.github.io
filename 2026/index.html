@@ -13,27 +13,34 @@
 <body>
   <div class="container">
     <header>
-      <div class="badge">1952 JOURNEY</div>
-      <h1>2026 Archives</h1>
-      <p class="tagline">Select a month to view posts.</p>
+      <div>
+        <span class="status-dot"></span> Online Notebook
+      </div>
+      <div>
+        <a href="/" class="nav-link">Feed</a>
+        <a href="/archive.html" class="nav-link">Archive</a>
+      </div>
     </header>
 
     <main class="archive">
+      <article class="header-card">
+        <span class="card-pin">📌</span>
+        <h1>2026 Archives</h1>
+        <p class="tagline">Select a month to view posts.</p>
+      </article>
+
       <a href="/2026/10/" class="archive-card">
         <span>October</span>
-        <span class="excerpt">11 Posts</span> <!-- [INCREASE POST COUNT] -->
+        <span class="excerpt" style="margin: 0;">12 Posts</span>
       </a>
+
       <a href="/2026/09/" class="archive-card">
         <span>September</span>
-        <span class="excerpt">3 Posts</span>
+        <span class="excerpt" style="margin: 0;">3 Posts</span>
       </a>
     </main>
 
     <footer>
-      <div class="footer-actions">
-        <a href="/" class="btn">&laquo; Feed</a>
-        <a href="/archive.html" class="btn">All Years &raquo;</a>
-      </div>
       <p class="copyright">
         &copy; <span id="year"></span> Ink & Irony - All Rights Reserved.
       </p>

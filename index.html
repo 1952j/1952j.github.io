@@ -8,20 +8,60 @@
   <title>Ink & Irony</title>
   <link rel="icon" type="image/x-icon" href="/assets/favicon.png" />
   <link rel="stylesheet" href="/assets/layout.css" />
+  <link rel="alternate" type="application/rss+xml" title="Ink & Irony" href="https://1952j.github.io/rss.xml" />
 </head>
 
 <body>
   <div class="container">
     <header>
-      <div class="badge">1952 Journey</div>
-      <h1>Ink &amp; Irony</h1>
-      <p class="tagline">Ink on screen, irony in mind.</p>
+      <div>
+        <span class="status-dot"></span> Online Notebook
+      </div>
+      <div>
+        <a href="/archive.html" class="nav-link">Archive</a>
+        <a href="/about.html" class="nav-link">About</a>
+        <a href="/rss.xml" class="nav-link">RSS</a>
+      </div>
     </header>
 
     <main class="feed">
 
+      <!-- Pinned Header Card -->
+      <article class="header-card">
+        <span class="card-pin">📌</span>
+        <div class="badge">1952 Journey</div>
+        <h1>Ink &amp; Irony</h1>
+        <p class="tagline">Ink on screen, irony in mind.</p>
+        <div class="field-note">
+          <b>⚡ FIELD NOTE:</b> Wandering without a compass, writing without a filter.
+        </div>
+      </article>
+      <!-- Pinned Header Card -->
+
       <!-- OCTOBER 2026 -->
-      <article class="post-card">
+
+      <article class="post-card col-span-2" id="unreturned-waiting">
+        <div class="post-meta">
+          <div class="post-meta-left">
+            <img class="meta-avatar" src="/assets/avatars/che-guevara.jpg" alt="Avatar" />
+            <span class="post-type" data-category="fragment"></span>
+          </div>
+          <time datetime="2026-10-11">Oct 11, 2026</time>
+        </div>
+        <div class="post-text">
+          <p>You are waiting for someone who is not coming back.<br>
+            <br>
+            Meaning,<br>
+            you are living your life<br>
+            in the hope that one day, someone will realize<br>
+            that they cannot live without you.<br>
+            <br>
+            That is not how realization works.
+          </p>
+        </div>
+      </article>
+
+      <article class="post-card" id="che-guevara-indignation">
         <div class="post-meta">
           <div class="post-meta-left">
             <img class="meta-avatar" src="/assets/avatars/che-guevara.jpg" alt="Avatar" />
@@ -36,7 +76,7 @@
         </div>
       </article>
 
-      <article class="post-card">
+      <article class="post-card" id="hasta-siempre">
         <div class="post-meta">
           <div class="post-meta-left">
             <img class="meta-avatar" src="/assets/avatars/che-guevara.jpg" alt="Avatar" />
@@ -50,7 +90,7 @@
         <img class="card-image" src="/2026/media/09-Oct.jpg" alt="TITLE" />
       </article>
 
-      <article class="post-card col-span-2">
+      <article class="post-card col-span-2" id="lao-tzu-present-moment">
         <div class="post-meta">
           <div class="post-meta-left">
             <img src="/assets/avatars/lao-tzu.jpg" alt="Avatar" class="meta-avatar" />
@@ -67,7 +107,7 @@
         </div>
       </article>
 
-      <article class="post-card">
+      <article class="post-card" id="right-path-quote">
         <div class="post-meta">
           <div class="post-meta-left">
             <img src="/assets/avatars/ink-pen.jpg" alt="Avatar" class="meta-avatar" />
@@ -82,7 +122,7 @@
         </div>
       </article>
 
-      <article class="post-card">
+      <article class="post-card" id="the-resting-boat">
         <div class="post-meta">
           <div class="post-meta-left">
             <img src="/assets/avatars/che-guevara.jpg" alt="Avatar" class="meta-avatar" />
@@ -101,7 +141,7 @@
         </div>
       </article>
 
-      <article class="post-card">
+      <article class="post-card" id="outside-the-herd">
         <div class="post-meta">
           <div class="post-meta-left">
             <img src="/assets/avatars/che-guevara.jpg" alt="Avatar" class="meta-avatar" />
@@ -115,7 +155,7 @@
         <img src="/2026/media/outside-the-herd.jpg" alt="Outside the Herd" class="card-image" />
       </article>
 
-      <article class="post-card col-span-2">
+      <article class="post-card col-span-2" id="one-sided-things">
         <div class="post-meta">
           <div class="post-meta-left">
             <img src="/assets/avatars/che-guevara.jpg" alt="Avatar" class="meta-avatar" />
@@ -134,7 +174,7 @@
         </div>
       </article>
 
-      <article class="post-card">
+      <article class="post-card" id="the-transient-woman">
         <div class="post-meta">
           <div class="post-meta-left">
             <img src="/assets/avatars/che-guevara.jpg" alt="Avatar" class="meta-avatar" />
@@ -148,7 +188,7 @@
         <img src="/2026/media/transient.jpg" alt="The Transient Woman" class="card-image" />
       </article>
 
-      <article class="post-card">
+      <article class="post-card" id="her-handbag">
         <div class="post-meta">
           <div class="post-meta-left">
             <img src="/assets/avatars/che-guevara.jpg" alt="Avatar" class="meta-avatar" />
@@ -171,7 +211,7 @@
         </div>
       </article>
 
-      <article class="post-card">
+      <article class="post-card" id="my-birthday">
         <div class="post-meta">
           <div class="post-meta-left">
             <img src="/assets/avatars/che-guevara.jpg" alt="Avatar" class="meta-avatar" />
@@ -192,7 +232,7 @@
         </div>
       </article>
 
-      <article class="post-card">
+      <article class="post-card" id="october-1st-reflection">
         <div class="post-meta">
           <div class="post-meta-left">
             <img src="/assets/avatars/che-guevara.jpg" alt="Avatar" class="meta-avatar" />
@@ -210,7 +250,7 @@
       </article>
 
       <!-- SEPTEMBER 2026 -->
-      <article class="post-card">
+      <article class="post-card" id="september-29-poem">
         <div class="post-meta">
           <div class="post-meta-left">
             <img src="/assets/avatars/che-guevara.jpg" alt="Avatar" class="meta-avatar" />
@@ -229,7 +269,7 @@
           </p>
       </article>
 
-      <article class="post-card">
+      <article class="post-card" id="accompany-autumn-quote">
         <div class="post-meta">
           <div class="post-meta-left">
             <img src="/assets/avatars/ink-pen.jpg" alt="Avatar" class="meta-avatar" />
@@ -245,7 +285,7 @@
         </div>
       </article>
 
-      <article class="post-card">
+      <article class="post-card" id="yellow-bed">
         <div class="post-meta">
           <div class="post-meta-left">
             <img src="/assets/avatars/che-guevara.jpg" alt="Avatar" class="meta-avatar" />
@@ -267,9 +307,6 @@
     </main>
 
     <footer>
-      <div class="footer-actions">
-        <a class="btn" href="/archive.html">View Full Archive</a>
-      </div>
       <p class="copyright">
         &copy; <span id="year"></span> Ink & Irony - All Rights Reserved.
       </p>
