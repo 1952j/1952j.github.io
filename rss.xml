@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ink &amp; Irony</title>
     <link>https://1952j.github.io/</link>
+    <atom:link href="https://1952j.github.io/rss.xml" rel="self" type="application/rss+xml" />
     <description>Ink on screen, irony in mind.</description>
     <language>en-us</language>
     <lastBuildDate>Sun, 11 Oct 2026 00:00:00 GMT</lastBuildDate>
 
    <item>
-      <title>Che Guevara: Indignation</title>
-      <link>https://1952j.github.io/#che-guevara-indignation</link>
-      <guid>https://1952j.github.io/#che-guevara-indignation</guid>
+      <title>Waiting for Someone</title>
+      <link>https://1952j.github.io/#waiting-for-someone</link>
+      <guid>https://1952j.github.io/#waiting-for-someone</guid>
       <pubDate>Sun, 11 Oct 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[<p>You are waiting for someone who is not coming back.<br><br>Meaning,<br>you are living your life<br>in the hope that one day, someone will realize<br>that they cannot live without you.<br><br>That is not how realization works.
       </p>]]></description>
