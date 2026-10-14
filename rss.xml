@@ -1,151 +1,138 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<?xml version='1.0' encoding='utf-8'?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <language>en-us</language>
+    <title>Ink &amp; Irony</title>
+    <link>https://1952j.github.io/</link>
+    <description>Ink on screen, irony in mind.</description>
+    <lastBuildDate>Wed, 14 Oct 2026 22:50:00 +0200</lastBuildDate>
+    <atom:link href="https://1952j.github.io/rss.xml" rel="self" type="application/rss+xml" />
 
-<channel>
+    <item>
+      <title>She will never forget…</title>
+      <pubDate>Wed, 14 Oct 2026 22:50:00 +0200</pubDate>
+      <link>https://1952j.github.io/2026/10/corrupted-files.html</link>
+      <description>You fool, who still believes that a woman is a book you can open and close whenever you please, listen well…</description>
+    </item>
 
-  <language>en-us</language>
-  <title>Ink &amp; Irony</title>
-  <link>https://1952j.github.io/</link>
-  <description>Ink on screen, irony in mind.</description>
-  <lastBuildDate>Tue, 13 Oct 2026 00:00:00 GMT</lastBuildDate>
-  <atom:link href="https://1952j.github.io/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>After the Ball</title>
+      <pubDate>Tue, 13 Oct 2026 00:00:00 GMT</pubDate>
+      <link>https://1952j.github.io/2026/10/after-the-ball.html</link>
+      <description>Ivan was a young man living the happiest days of his life. One evening, he attended a lavish ball. There, he fell in love with a beautiful girl named Varenka…</description>
+    </item>
 
-  <item>
-    <title>After the Ball</title>
-    <pubDate>Tue, 13 Oct 2026 00:00:00 GMT</pubDate>
-    <link>https://1952j.github.io/2026/10/after-the-ball.html</link>
-    <guid>https://1952j.github.io/2026/10/after-the-ball.html</guid>
-    <category>Love &amp; Heartbreak</category>
-    <description><![CDATA[Ivan was a young man living the happiest days of his life. One evening, he attended a lavish ball. There, he fell in love with a beautiful girl named Varenka...]]></description>
-  </item>
+    <item>
+      <title>The Illusion of Regret</title>
+      <pubDate>Mon, 12 Oct 2026 00:00:00 GMT</pubDate>
+      <link>https://1952j.github.io/2026/10/illusion-of-regret.html</link>
+      <description>Regret… the biggest trick the mind believes. You think you are suffering because of what you did. You think it is the past that hurts you. But the past no longer exists.</description>
+    </item>
 
-  <item>
-    <title>The Illusion of Regret</title>
-    <pubDate>Mon, 12 Oct 2026 00:00:00 GMT</pubDate>
-    <link>https://1952j.github.io/2026/10/illusion-of-regret.html</link>
-    <guid>https://1952j.github.io/2026/10/illusion-of-regret.html</guid>
-    <description><![CDATA[Regret… the biggest trick the mind believes. You think you are suffering because of what you did. You think it is the past that hurts you. But the past no longer exists.]]></description>
-  </item>
+    <item>
+      <title>Waiting for Someone</title>
+      <pubDate>Sun, 11 Oct 2026 00:00:00 GMT</pubDate>
+      <link>https://1952j.github.io/#waiting-for-someone</link>
+      <description>You are waiting for someone who is not coming back. Meaning, you are living your life in the hope that one day, someone will realize that they cannot live without you. That is not how realization works.</description>
+    </item>
 
-  <item>
-    <title>Waiting for Someone</title>
-    <pubDate>Sun, 11 Oct 2026 00:00:00 GMT</pubDate>
-    <link>https://1952j.github.io/#waiting-for-someone</link>
-    <guid>https://1952j.github.io/#waiting-for-someone</guid>
-    <description><![CDATA[You are waiting for someone who is not coming back. Meaning, you are living your life in the hope that one day, someone will realize that they cannot live without you. That is not how realization works.]]></description>
-  </item>
+    <item>
+      <title>Che Guevara: Indignation</title>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 GMT</pubDate>
+      <link>https://1952j.github.io/#che-guevara-indignation</link>
+      <description>“If you tremble with indignation at every injustice then you are a comrade of mine.” — Che Guevara</description>
+    </item>
 
-  <item>
-    <title>Che Guevara: Indignation</title>
-    <pubDate>Fri, 09 Oct 2026 00:00:00 GMT</pubDate>
-    <link>https://1952j.github.io/#che-guevara-indignation</link>
-    <guid>https://1952j.github.io/#che-guevara-indignation</guid>
-    <description><![CDATA[“If you tremble with indignation at every injustice then you are a comrade of mine.” — Che Guevara]]></description>
-  </item>
+    <item>
+      <title>Hasta siempre</title>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 GMT</pubDate>
+      <link>https://1952j.github.io/2026/10/hasta-siempre.html</link>
+      <description>Hasta siempre</description>
+    </item>
 
-  <item>
-    <title>Hasta siempre</title>
-    <pubDate>Fri, 09 Oct 2026 00:00:00 GMT</pubDate>
-    <link>https://1952j.github.io/2026/10/hasta-siempre.html</link>
-    <guid>https://1952j.github.io/2026/10/hasta-siempre.html</guid>
-    <description><![CDATA[Hasta siempre]]></description>
-  </item>
+    <item>
+      <title>Lao Tzu: Present Moment</title>
+      <pubDate>Wed, 07 Oct 2026 00:00:00 GMT</pubDate>
+      <link>https://1952j.github.io/#lao-tzu-present-moment</link>
+      <description>“If you are depressed you are living in the past. If you are anxious you are living in the future. If you are at peace you are living in the present.” — Lao Tzu</description>
+    </item>
 
-  <item>
-    <title>Lao Tzu: Present Moment</title>
-    <pubDate>Wed, 07 Oct 2026 00:00:00 GMT</pubDate>
-    <link>https://1952j.github.io/#lao-tzu-present-moment</link>
-    <guid>https://1952j.github.io/#lao-tzu-present-moment</guid>
-    <description><![CDATA[“If you are depressed you are living in the past. If you are anxious you are living in the future. If you are at peace you are living in the present.” — Lao Tzu]]></description>
-  </item>
+    <item>
+      <title>Anonymous: Right Path</title>
+      <pubDate>Sun, 04 Oct 2026 00:00:00 GMT</pubDate>
+      <link>https://1952j.github.io/#right-path-quote</link>
+      <description>“When looking back makes you never want to turn around, rest assured… you're on the right path.” — Anonymous</description>
+    </item>
 
-  <item>
-    <title>Anonymous: Right Path</title>
-    <pubDate>Sun, 04 Oct 2026 00:00:00 GMT</pubDate>
-    <link>https://1952j.github.io/#right-path-quote</link>
-    <guid>https://1952j.github.io/#right-path-quote</guid>
-    <description><![CDATA[“When looking back makes you never want to turn around, rest assured… you're on the right path.” — Anonymous]]></description>
-  </item>
+    <item>
+      <title>The Resting Boat</title>
+      <pubDate>Sun, 04 Oct 2026 00:00:00 GMT</pubDate>
+      <link>https://1952j.github.io/2026/10/the-resting-boat.html</link>
+      <description>The journey had weighed heavily upon it, and it bowed. It was not surrender…</description>
+    </item>
 
-  <item>
-    <title>The Resting Boat</title>
-    <pubDate>Sun, 04 Oct 2026 00:00:00 GMT</pubDate>
-    <link>https://1952j.github.io/2026/10/the-resting-boat.html</link>
-    <guid>https://1952j.github.io/2026/10/the-resting-boat.html</guid>
-    <description><![CDATA[The journey had weighed heavily upon it, and it bowed. It was not surrender…]]></description>
-  </item>
+    <item>
+      <title>Outside the Herd</title>
+      <pubDate>Sat, 03 Oct 2026 00:00:00 GMT</pubDate>
+      <link>https://1952j.github.io/2026/10/outside-the-herd.html</link>
+      <description>Outside the Herd reflection card.</description>
+    </item>
 
-  <item>
-    <title>Outside the Herd</title>
-    <pubDate>Sat, 03 Oct 2026 00:00:00 GMT</pubDate>
-    <link>https://1952j.github.io/2026/10/outside-the-herd.html</link>
-    <guid>https://1952j.github.io/2026/10/outside-the-herd.html</guid>
-    <description><![CDATA[Outside the Herd reflection card.]]></description>
-  </item>
+    <item>
+      <title>Fragment: One-sided things</title>
+      <pubDate>Sat, 03 Oct 2026 00:00:00 GMT</pubDate>
+      <link>https://1952j.github.io/#one-sided-things</link>
+      <description>One-sided things are always painful… Like when you are waiting while she is sleeping.</description>
+    </item>
 
-  <item>
-    <title>Fragment: One-sided things</title>
-    <pubDate>Sat, 03 Oct 2026 00:00:00 GMT</pubDate>
-    <link>https://1952j.github.io/#one-sided-things</link>
-    <guid>https://1952j.github.io/#one-sided-things</guid>
-    <description><![CDATA[One-sided things are always painful… Like when you are waiting while she is sleeping.]]></description>
-  </item>
+    <item>
+      <title>The Transient Woman</title>
+      <pubDate>Fri, 02 Oct 2026 00:00:00 GMT</pubDate>
+      <link>https://1952j.github.io/2026/10/transient.html</link>
+      <description>The Transient Woman essay card.</description>
+    </item>
 
-  <item>
-    <title>The Transient Woman</title>
-    <pubDate>Fri, 02 Oct 2026 00:00:00 GMT</pubDate>
-    <link>https://1952j.github.io/2026/10/transient.html</link>
-    <guid>https://1952j.github.io/2026/10/transient.html</guid>
-    <description><![CDATA[The Transient Woman essay card.]]></description>
-  </item>
+    <item>
+      <title>Her Handbag</title>
+      <pubDate>Fri, 02 Oct 2026 00:00:00 GMT</pubDate>
+      <link>https://1952j.github.io/2026/10/her-handbag.html</link>
+      <description>I don’t know how she carries an entire home inside a small handbag…</description>
+    </item>
 
-  <item>
-    <title>Her Handbag</title>
-    <pubDate>Fri, 02 Oct 2026 00:00:00 GMT</pubDate>
-    <link>https://1952j.github.io/2026/10/her-handbag.html</link>
-    <guid>https://1952j.github.io/2026/10/her-handbag.html</guid>
-    <description><![CDATA[I don’t know how she carries an entire home inside a small handbag…]]></description>
-  </item>
+    <item>
+      <title>My Birthday</title>
+      <pubDate>Thu, 01 Oct 2026 00:00:00 GMT</pubDate>
+      <link>https://1952j.github.io/2026/10/my-birthday.html</link>
+      <description>You still ask me about my birthday? Then write down what you do not yet know...</description>
+    </item>
 
-  <item>
-    <title>My Birthday</title>
-    <pubDate>Thu, 01 Oct 2026 00:00:00 GMT</pubDate>
-    <link>https://1952j.github.io/2026/10/my-birthday.html</link>
-    <guid>https://1952j.github.io/2026/10/my-birthday.html</guid>
-    <description><![CDATA[You still ask me about my birthday? Then write down what you do not yet know...]]></description>
-  </item>
+    <item>
+      <title>Reflection: October 1st</title>
+      <pubDate>Thu, 01 Oct 2026 00:00:00 GMT</pubDate>
+      <link>https://1952j.github.io/#october-1st-reflection</link>
+      <description>October 1st… Another year comes full circle.</description>
+    </item>
 
-  <item>
-    <title>Reflection: October 1st</title>
-    <pubDate>Thu, 01 Oct 2026 00:00:00 GMT</pubDate>
-    <link>https://1952j.github.io/#october-1st-reflection</link>
-    <guid>https://1952j.github.io/#october-1st-reflection</guid>
-    <description><![CDATA[October 1st… Another year comes full circle.]]></description>
-  </item>
+    <item>
+      <title>The Poem Is Born from Her Fingers</title>
+      <pubDate>Wed, 30 Sep 2026 00:00:00 GMT</pubDate>
+      <link>https://1952j.github.io/2026/09/september-29.html</link>
+      <description>I was born… on the twenty-ninth of September...</description>
+    </item>
 
-  <item>
-    <title>The Poem Is Born from Her Fingers</title>
-    <pubDate>Wed, 30 Sep 2026 00:00:00 GMT</pubDate>
-    <link>https://1952j.github.io/2026/09/september-29.html</link>
-    <guid>https://1952j.github.io/2026/09/september-29.html</guid>
-    <description><![CDATA[I was born… on the twenty-ninth of September...]]></description>
-  </item>
+    <item>
+      <title>Anonymous: Accompany Autumn</title>
+      <pubDate>Wed, 30 Sep 2026 00:00:00 GMT</pubDate>
+      <link>https://1952j.github.io/#accompany-autumn-quote</link>
+      <description>“Accompany autumn on its journey, so that everything life has broken inside you may fall away…” — Anonymous</description>
+    </item>
 
-  <item>
-    <title>Anonymous: Accompany Autumn</title>
-    <pubDate>Wed, 30 Sep 2026 00:00:00 GMT</pubDate>
-    <link>https://1952j.github.io/#accompany-autumn-quote</link>
-    <guid>https://1952j.github.io/#accompany-autumn-quote</guid>
-    <description><![CDATA[“Accompany autumn on its journey, so that everything life has broken inside you may fall away…” — Anonymous]]></description>
-  </item>
+    <item>
+      <title>Giving Birth on a Yellow Bed</title>
+      <pubDate>Tue, 29 Sep 2026 00:00:00 GMT</pubDate>
+      <link>https://1952j.github.io/2026/09/yellow-bed.html</link>
+      <description>On the day I was born, September 29, 1983, in one of the old houses of Damascus...</description>
+    </item>
 
-  <item>
-    <title>Giving Birth on a Yellow Bed</title>
-    <pubDate>Tue, 29 Sep 2026 00:00:00 GMT</pubDate>
-    <link>https://1952j.github.io/2026/09/yellow-bed.html</link>
-    <guid>https://1952j.github.io/2026/09/yellow-bed.html</guid>
-    <description><![CDATA[On the day I was born, September 29, 1983, in one of the old houses of Damascus...]]></description>
-  </item>
-
-</channel>
+  </channel>
 </rss>
