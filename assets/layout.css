@@ -1,3 +1,7 @@
+html {
+  visibility: hidden;
+}
+
 :root {
   --bg: #0d1117;
   --text: #c9d1d9;
@@ -8,11 +12,11 @@
   --text-bright: #f0f6fc;
   --surface-hover: #21262d;
 
-  --cat-poem: #f778ba;
-  --cat-essay: #39c5cf;
-  --cat-quote: #88b04b;
-  --cat-fragment: #e3b341;
-  --cat-reflection: #d2a8ff;
+  --cat-poem: #ef79a8;
+  --cat-quote: #f29466;
+  --cat-essay: #44c6ba;
+  --cat-fragment: #e6b450;
+  --cat-reflection: #b392e6;
 }
 
 * {
@@ -136,7 +140,7 @@ article {
   height: 8px;
   border-radius: 50%;
   display: inline-block;
-  background-color: #56d364;
+  background-color: #3fb950;
 }
 
 .badge,
