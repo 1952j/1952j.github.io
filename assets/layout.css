@@ -8,11 +8,11 @@
   --text-bright: #f0f6fc;
   --surface-hover: #21262d;
 
-  --cat-poem: #ef79a8;
-  --cat-quote: #f29466;
-  --cat-essay: #44c6ba;
-  --cat-fragment: #e6b450;
-  --cat-reflection: #b392e6;
+  --cat-poem: #d9789c;
+  --cat-essay: #62b7ad;
+  --cat-quote: #db906f;
+  --cat-fragment: #d4ad62;
+  --cat-reflection: #a58bd0;
 }
 
 * {
@@ -101,11 +101,12 @@ article {
   flex-direction: column;
   transition: all 3s ease;
   background: var(--surface);
-  border: 1px solid var(--border);
   justify-content: space-between;
+  border: 1px solid var(--border);
 }
 
-.header-card {
+.header-card,
+.archive-card {
   text-align: center;
   justify-content: center;
 }
@@ -113,7 +114,6 @@ article {
 .archive-card {
   font-size: 2rem;
   font-weight: bold;
-  text-align: center;
   text-decoration: none;
   color: var(--text-bright);
 }
@@ -248,22 +248,24 @@ article {
 .card-image {
   margin-top: 2px;
   aspect-ratio: 16 / 9;
+  filter: grayscale(100%);
+  transition: filter 5s ease;
 }
 
 .post-card:hover,
 .header-card:hover,
 .archive-card:hover {
   color: var(--text-bright);
-  background-color: var(--surface-hover);
-}
-
-.post-card:hover,
-.header-card:hover {
   border-color: var(--text-muted);
+  background-color: var(--surface-hover);
 }
 
 .archive-card:hover {
   border-color: var(--accent);
+}
+
+.post-card:hover .card-image {
+  filter: grayscale(0%);
 }
 
 .post-card h1,
@@ -378,6 +380,12 @@ footer {
   color: var(--text-muted);
 }
 
+@media (max-width: 900px) {
+  .col-span-3 {
+    grid-column: span 2;
+  }
+}
+
 @media (max-width: 650px) {
   .col-span-2,
   .col-span-3 {
@@ -399,12 +407,6 @@ footer {
   .lyrics-table td {
     border-bottom: none;
     padding: 6px 0;
-  }
-}
-
-@media (max-width: 900px) {
-  .col-span-3 {
-    grid-column: span 2;
   }
 }
 
