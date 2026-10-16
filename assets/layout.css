@@ -1,7 +1,3 @@
-html {
-  visibility: hidden;
-}
-
 :root {
   --bg: #0d1117;
   --text: #c9d1d9;
@@ -100,23 +96,18 @@ article {
 .header-card,
 .archive-card {
   display: flex;
+  padding: 15px;
   border-radius: 10px;
   flex-direction: column;
   transition: all 3s ease;
   background: var(--surface);
   border: 1px solid var(--border);
+  justify-content: space-between;
 }
 
 .header-card {
-  padding: 15px;
-  position: relative;
   text-align: center;
   justify-content: center;
-}
-
-.post-card {
-  padding: 15px;
-  justify-content: space-between;
 }
 
 .archive-card {
@@ -124,7 +115,6 @@ article {
   font-weight: bold;
   text-align: center;
   text-decoration: none;
-  justify-content: center;
   color: var(--text-bright);
 }
 
