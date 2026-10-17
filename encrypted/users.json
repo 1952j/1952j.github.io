@@ -1,0 +1,10 @@
+{
+  "users": [
+    {
+      "username": "1952j",
+      "salt": "Xo3cPqgZr2/EGIqqP80XuQ==",
+      "iv": "zK9AM9C3xwkCKz0p",
+      "wrappedKey": "cKCv+vaOQoDqQL4BJKt4QNe8p2Wm/ToGiZRjiURXtB+YbnBHCfOHQXuD3RDtInOw"
+    }
+  ]
+}

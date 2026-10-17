@@ -1,8 +1,8 @@
-## Ink & Irony
+## Ink &amp; Irony
 
 > **`Ink on screen, irony in mind.`**
 
-**Ink & Irony** is a personal online notebook inspired by the restless spirit of the 1952 journey across South America.
+**Ink &amp; Irony** is a personal online notebook inspired by the restless spirit of the 1952 journey across South America.
 
 A space for unfiltered thoughts, raw observations, and writing without restraint. No polished narratives, no pursuit of applause &ndash; just words as they come.
 
@@ -26,4 +26,4 @@ For questions or correspondence, reach out via email at: [ink.irony@outlook.com]
 
 _Wandering without a compass, writing without a filter._
 
-© Ink & Irony - All rights reserved.
+© Ink &amp; Irony - All rights reserved.
