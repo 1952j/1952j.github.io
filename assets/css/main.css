@@ -1,0 +1,170 @@
+:root {
+  --bg: #0d1117;
+  --text: #c9d1d9;
+  --accent: #58a6ff;
+  --border: #30363d;
+  --surface: #161b22;
+  --text-muted: #8b949e;
+  --text-bright: #f0f6fc;
+  --surface-hover: #21262d;
+
+  --cat-poem: #d9789c;
+  --cat-essay: #62b7ad;
+  --cat-quote: #db906f;
+  --cat-fragment: #d4ad62;
+  --cat-reflection: #a58bd0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  color: var(--text);
+  padding: 40px 20px;
+  justify-content: center;
+  background-color: var(--bg);
+  font-family:
+    ui-monospace, "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+}
+
+article {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+header {
+  display: flex;
+  font-size: 0.75rem;
+  text-align: center;
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  align-items: baseline;
+  letter-spacing: 0.75px;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border);
+}
+
+footer {
+  margin-top: 25px;
+  padding-top: 20px;
+  text-align: center;
+  border-top: 1px solid var(--border);
+}
+
+.author-note {
+  font-weight: 600;
+  padding-top: 5px;
+  font-size: 1.1rem;
+  color: var(--text-muted);
+}
+
+.field-note {
+  padding: 8px;
+  margin-top: 14px;
+  font-size: 0.8rem;
+  border-radius: 5px;
+  background: #58a6ff14;
+  border: 1px solid var(--accent);
+}
+
+.copyright {
+  margin-top: 15px;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+  color: var(--text-muted);
+}
+
+.container {
+  width: 100%;
+  max-width: 920px;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #3fb950;
+}
+
+.nav-link {
+  margin-left: 15px;
+  text-decoration: none;
+  transition: all 3s ease;
+  color: var(--text-muted);
+}
+
+.nav-link:hover {
+  color: var(--accent);
+}
+
+.meta {
+  display: flex;
+  font-size: 0.8rem;
+  align-items: center;
+  margin-bottom: 12px;
+  color: var(--text-muted);
+  justify-content: space-between;
+}
+
+.meta-left {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.meta-avatar {
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+  border-radius: 25%;
+  border: 1px solid var(--border);
+}
+
+.type::before {
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  content: attr(data-category);
+}
+
+.type[data-category="poem"] {
+  color: var(--cat-poem);
+}
+
+.type[data-category="essay"] {
+  color: var(--cat-essay);
+}
+
+.type[data-category="quote"] {
+  color: var(--cat-quote);
+}
+
+.type[data-category="fragment"] {
+  color: var(--cat-fragment);
+}
+
+.type[data-category="reflection"] {
+  color: var(--cat-reflection);
+}
+
+.container {
+  animation: fadeIn 3s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,46 @@
+.tag {
+  text-transform: uppercase;
+  color: var(--text-bright);
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.text {
+  line-height: 1.5;
+  margin-block: auto;
+  font-size: 1.05rem;
+}
+
+.text h1 {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: var(--text-bright);
+}
+
+.text blockquote {
+  margin: 16px 0;
+  line-height: 1.6;
+  padding-left: 18px;
+  font-style: italic;
+  color: var(--text-muted);
+  border-left: 2px solid var(--border);
+}
+
+.image,
+.video {
+  width: 100%;
+  display: block;
+  margin-top: 24px;
+  border-radius: 3%;
+  object-fit: cover;
+  border: 1px solid var(--border);
+}
+
+.hr-line {
+  border: 0;
+  border-top: 1px solid var(--border);
+}
