@@ -57,22 +57,6 @@ footer {
   border-top: 1px solid var(--border);
 }
 
-.author-note {
-  font-weight: 600;
-  padding-top: 5px;
-  font-size: 1.1rem;
-  color: var(--text-muted);
-}
-
-.field-note {
-  padding: 8px;
-  margin-top: 14px;
-  font-size: 0.8rem;
-  border-radius: 5px;
-  background: #58a6ff14;
-  border: 1px solid var(--accent);
-}
-
 .copyright {
   margin-top: 15px;
   font-size: 0.8rem;
@@ -90,18 +74,7 @@ footer {
   height: 8px;
   border-radius: 50%;
   display: inline-block;
-  background-color: #3fb950;
-}
-
-.nav-link {
-  margin-left: 15px;
-  text-decoration: none;
-  transition: all 3s ease;
-  color: var(--text-muted);
-}
-
-.nav-link:hover {
-  color: var(--accent);
+  background-color: var(--text-muted);
 }
 
 .meta {
