@@ -7,6 +7,7 @@
   --text-muted: #8b949e;
   --text-bright: #f0f6fc;
   --surface-hover: #21262d;
+  --status-online: #3fb950;
 
   --cat-poem: #d9789c;
   --cat-essay: #62b7ad;
@@ -74,7 +75,14 @@ footer {
   height: 8px;
   border-radius: 50%;
   display: inline-block;
+}
+
+.status-dot.offline {
   background-color: var(--text-muted);
+}
+
+.status-dot.online {
+  background-color: var(--status-online);
 }
 
 .meta {
