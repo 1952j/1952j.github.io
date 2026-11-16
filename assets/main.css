@@ -135,6 +135,15 @@ footer {
   color: var(--cat-reflection);
 }
 
+blockquote {
+  padding: 12px 16px;
+  font-style: italic;
+  border-radius: 0 4px 4px 0;
+  color: var(--text-bright);
+  background-color: var(--surface);
+  border-left: 3px solid var(--cat-quote, var(--accent));
+}
+
 .container {
   animation: fadeIn 3s ease-out forwards;
 }
