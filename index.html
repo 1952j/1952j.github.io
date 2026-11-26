@@ -10,13 +10,14 @@
 </head>
 
 <body>
-
+  <canvas id="snow"></canvas>
   <div class="container">
 
     <header>
-      <div>
-        <span class="status-dot"></span> Offline
-      </div>
+      <div><span class="status-dot"></span> Offline</div>
+      <button id="audio-toggle" class="audio-btn" aria-label="Toggle music">
+        ♪ Play Music
+      </button>
     </header>
 
     <main style="padding: 40px 0; max-width: 680px; margin: 0 auto;">
@@ -28,25 +29,29 @@
         </div>
         <time datetime="2026-10-19">Oct 19, 2026</time>
       </div>
+      <div class="poem-layout">
+        <article>
+          <h1 style="font-size: 1.6rem; color: var(--text-bright); margin-bottom: 24px;">Weddings</h1>
 
-      <article>
-        <h1 style="font-size: 1.6rem; color: var(--text-bright); margin-bottom: 24px;">Weddings</h1>
+          <div style="font-size: 1.05rem; line-height: 1.8; color: var(--text);">
+            <p>
+              All of my poems…<br>
+              have been married off – thank God –<br>
+              and not a single poem remains in my home<br>
+              that has yet to find its destined match.<br>
+              <br>
+              And that is why I am hated<br>
+              by everyone who still has<br>
+              an unmarried daughter…<br>
+              or an unmarried poem.
+            </p>
+          </div>
+        </article>
 
-        <div style="font-size: 1.05rem; line-height: 1.8; color: var(--text);">
-          <p>
-            All of my poems…<br>
-            have been married off – thank God –<br>
-            and not a single poem remains in my home<br>
-            that has yet to find its destined match.<br>
-            <br>
-            And that is why I am hated<br>
-            by everyone who still has<br>
-            an unmarried daughter…<br>
-            or an unmarried poem.
-          </p>
-        </div>
-      </article>
-
+        <aside class="poem-visual">
+          <img src="/assets/christmas-tree.gif" alt="Christmas Tree" class="tree-gif" />
+        </aside>
+      </div>
     </main>
 
     <footer>
@@ -56,8 +61,10 @@
     </footer>
 
   </div>
-
+  <audio id="bg-music" src="/assets/let-it-snow.mp3" loop preload="auto"></audio>
   <script src="/assets/year.js"></script>
+  <script src="/assets/snow.js"></script>
+  <script src="/assets/audio.js"></script>
 </body>
 
 </html>
