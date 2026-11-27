@@ -1,7 +1,7 @@
 const audio = document.getElementById("bg-music");
 const toggleBtn = document.getElementById("audio-toggle");
 
-audio.volume = 0.35; // Keep background music soft (0.0 to 1.0)
+audio.volume = 0.35;
 
 function updateUI(isPlaying) {
   if (isPlaying) {
